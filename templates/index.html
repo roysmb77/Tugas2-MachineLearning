@@ -189,7 +189,7 @@
                 </div>
                 <div>
                   <h4 class="mb-0 header-title">Prediksi Kalori Terbakar Berdasarkan Durasi Latihan 🏋‍♀</h4>
-                  <div class="small-muted">Masukkan durasi latihan (menit), lalu klik "Prediksi Kalori".</div>
+                  <div class="small-muted">Masukkan durasi latihan (jam), lalu klik "Prediksi Kalori".</div>
                 </div>
               </div>
 
@@ -197,7 +197,7 @@
               <form method="POST" action="{{ url_for('predict') }}" class="mb-3" id="predictForm">
                 <div class="row g-2 align-items-end">
                   <div class="col-md-6">
-                    <label for="duration" class="form-label small-muted">Durasi latihan (menit)</label>
+                    <label for="duration" class="form-label small-muted">Durasi latihan (jam)</label>
                     <input id="duration" name="duration" type="text" class="form-control form-control-lg" placeholder="Contoh: 30" value="{{ duration_input|default('') }}">
                   </div>
                   <div class="col-md-3 d-grid">
